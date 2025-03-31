@@ -1,0 +1,40 @@
+/* Menu style */
+header {
+	
+	width: 97%;
+	max-width: 1110px;
+	margin: 10px auto 0;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header ul {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	list-style-type: none;
+}
+
+header ul li {
+	background-color: #D3D9DF;
+	border-radius: 4px;
+	padding: 10px; 
+
+}
+
+header ul li:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+@media (max-width: 548px) {
+	
+	header {
+		gap: 10px;
+		flex-direction: column;
+		font-size: 15px;
+	}
+
+}
