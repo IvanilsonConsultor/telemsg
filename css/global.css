@@ -1,0 +1,24 @@
+* {
+	
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+body {    
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+
+}
+
+button {
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+button:hover {
+	opacity: 0.8;
+}
