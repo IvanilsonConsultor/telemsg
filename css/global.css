@@ -6,12 +6,30 @@
 
 }
 
-body {    
+a {
+	text-decoration: none;
+		color: black;
+}
+
+/* Pop up WhatsApp */
+.popup_whatsapp {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	transition: transform 0.3s ease;
+	z-index: 9999;
+}
+
+.popup_whatsapp:hover {
+	transform: scale(1.2);
+}
+
+
+
+body {
   font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
-
 }
 
 button {
@@ -21,4 +39,34 @@ button {
 
 button:hover {
 	opacity: 0.8;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+
+	justify-content: center;
+
+	padding-bottom: 20px;
+}
+
+footer nav ul {
+	margin-top: 100px;
+
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	gap: 40px;
+}
+
+footer p {
+	margin-top: 3px;
+	font-size: 11.8px;
+	color: #6C757D;
+}
+
+footer span {
+	text-decoration: underline;
 }
