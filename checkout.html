@@ -1,153 +1,247 @@
 <!DOCTYPE html>
 <html lang="br">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Telemensagem - Checkout</title>
-		<link href="css/global.css" rel="stylesheet">
-		<link href="css/page_checkout.css" rel="stylesheet"/>
-	</head>
-	<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Telemensagem - Checkout</title>
+    <link href="css/global.css" rel="stylesheet" />
+    <link href="css/page_checkout.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <img
+        style="width: 330px; height: 124px; margin: 70px auto 0; display: block"
+        src="images/logotipo-checkout.svg"
+        alt="logotipo-main"
+      />
 
-		<main>
-			<img style="width: 330px; height: 124px; margin: 70px auto 0; display: block;" src="images/logotipo-checkout.svg" alt="logotipo-main"/>
+      <!-- Telemensagem selecionada -->
+      <section class="sec_container container_selected_message">
+        <h2 style="font-weight: 400">
+          Amor, para ser feliz, eu preciso de você.
+        </h2>
 
-			<!-- Telemensagem selecionada -->
-			<section class="sec_container container_selected_message ">
-				<h2 style="font-weight: 400;">Amor, para ser feliz, eu preciso de você.</h2>
+        <!-- Mp3 - view -->
+        <div class="mp3_container">
+          <img
+            style="cursor: pointer"
+            src="images/icons/Button - Play → SVG.svg"
+            alt="player-icon"
+          />
+          <p>00:00</p>
 
-				<!-- Mp3 - view -->
-				<div class="mp3_container">
-					<img style="cursor:pointer;" src="images/icons/Button - Play → SVG.svg" alt="player-icon" />
-					<p>00:00</p>
+          <div class="line_sound">
+            <div class="line_sound_circle"></div>
+          </div>
+          <p>02:07</p>
+          <img
+            src="images/icons/Button - Open Volume Controls → SVG.svg"
+            alt="song-icon"
+          />
+        </div>
 
-					<div class="line_sound">
-						<div class="line_sound_circle"></div>
-					</div>
-					<p>02:07</p>
-					<img src="images/icons/Button - Open Volume Controls → SVG.svg" alt="song-icon" />
-				</div>
+        <p
+          style="
+            width: 147.16px;
+            color: #555555;
+            font-size: 12.3px;
+            margin: 20px auto 0;
+          "
+        >
+          Love Yourself Justin Bieber Cod.: 10410 - M
+        </p>
+      </section>
 
+      <section class="alert">
+        <p>
+          Para concluir seu pedido, preencha os campos abaixo e clique em:
+          <br />
+          <span>Confirmar Agendamento</span>
+        </p>
+      </section>
 
-				<p style="width: 147.16px; color:#555555; font-size: 12.3px; margin: 20px auto 0;">Love Yourself Justin Bieber
-					Cod.: 10410 - M</p>
+      <form style="display: flex; flex-direction: column; gap: 30px">
+        <div class="sec_container">
+          <h1 style="color: #212529; font-size: 28px; font-weight: 400">
+            Remetente
+          </h1>
 
-			</section>
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 15px;
+              margin-top: 20px;
+            "
+          >
+            <label>
+              <p style="font-size: 14.4px; color: #212529">
+                Quem está enviando?
+              </p>
+              <input
+                class="input_pattern"
+                type="text"
+                name="your-name"
+                placeholder="Seu nome"
+              />
+            </label>
+            <label>
+              <p style="font-size: 14.4px; color: #212529">
+                Informe seu whatsapp para contato
+              </p>
+              <input
+                class="input_pattern"
+                type="text"
+                name="your-phone"
+                placeholder="Ex.: DDD + Telefone"
+              />
+            </label>
+          </div>
+        </div>
 
-			<section class="alert">
-				<p>Para concluir seu pedido, preencha os campos abaixo e clique em:
-					<br> <span>Confirmar Agendamento</span></p>
-			</section>
+        <div class="sec_container">
+          <h1 style="color: #212529; font-size: 28px; font-weight: 400">
+            Destinatário
+          </h1>
 
-			<form style="display: flex; flex-direction: column; gap: 30px;">
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 15px;
+              margin-top: 20px;
+            "
+          >
+            <label>
+              <p style="font-size: 14.4px; color: #212529">Quem vai receber?</p>
+              <input
+                class="input_pattern"
+                type="text"
+                name="patner-name"
+                placeholder="Nome dele(a)"
+              />
+            </label>
+            <label>
+              <p style="font-size: 14.4px; color: #212529">Telefone dele(a)</p>
+              <input
+                class="input_pattern"
+                type="text"
+                name="your-phone"
+                placeholder="Ex.: DDD + Telefone"
+              />
+            </label>
+          </div>
+        </div>
 
-				<div class="sec_container">
-					<h1 style="color:#212529; font-size: 28px; font-weight: 400;">Remetente</h1>
-		
-					<div style="display: flex; flex-direction: column; gap: 15px; margin-top: 20px;">
+        <div class="sec_container">
+          <h1 style="color: #212529; font-size: 28px; font-weight: 400">
+            Agendamento
+          </h1>
 
-						<label>
-							<p style="font-size: 14.4px; color: #212529;">Quem está enviando?</p>
-							<input class="input_pattern" type="text" name="your-name" placeholder="Seu nome">
-						</label>
-						<label>
-							<p style="font-size: 14.4px; color: #212529;">Informe seu whatsapp para contato</p>
-							<input class="input_pattern" type="text" name="your-phone" placeholder="Ex.: DDD + Telefone">
-						</label>
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 15px;
+              margin-top: 20px;
+            "
+          >
+            <label>
+              <p style="font-size: 14.4px; color: #212529">Data do Envio</p>
+              <input
+                class="input_pattern"
+                type="date"
+                name="hour-date"
+                placeholder="01/01/2025"
+              />
+            </label>
+            <label>
+              <p style="font-size: 14.4px; color: #212529">Hora do envio</p>
+              <input
+                class="input_pattern"
+                type="time"
+                name="hour-send"
+                placeholder="09:48 AM"
+              />
+            </label>
+          </div>
+        </div>
 
-					</div>
+        <div class="sec_container">
+          <h1
+            style="
+              color: #212529;
+              font-size: 28px;
+              font-weight: 400;
+              text-align: center;
+            "
+          >
+            Detalhes do pedido
+          </h1>
 
-				</div>
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 15px;
+              margin-top: 20px;
+            "
+          >
+            <ul style="display: flex; flex-direction: column; gap: 10px">
+              <li style="display: flex; justify-content: space-between">
+                <p>Telemensagem selecionada</p>
+                <p>R$ 19,90</p>
+              </li>
+              <li style="display: flex; justify-content: space-between">
+                <p>Envio p/n de Celular</p>
+                <p>R$ 10,00</p>
+              </li>
+              <li style="display: flex; justify-content: space-between">
+                <p>+ Envio de texto</p>
+                <p>R$ 3,00</p>
+              </li>
+              <li style="display: flex; justify-content: space-between">
+                <p>+ Envio de audio whatsapp</p>
+                <p>R$ 9,00</p>
+              </li>
+              <li style="display: flex; justify-content: space-between">
+                <p>+ Gravação Telefônica</p>
+                <p>GRÁTIS</p>
+              </li>
+            </ul>
+            <br />
+            <p>Total de <span>R$ 19,08</span></p>
 
-				<div class="sec_container">
-					<h1 style="color:#212529; font-size: 28px; font-weight: 400;">Destinatário</h1>
-		
-					<div style="display: flex; flex-direction: column; gap: 15px; margin-top: 20px;">
+            <input
+              style="
+                cursor: pointer;
+                padding: 10px;
+                background: #b51717;
+                border: 0;
+                border-radius: 10px;
+                color: white;
+                font-size: 20px;
+              "
+              type="submit"
+              value="CONFIRMAR AGENDAMENTO"
+            />
+          </div>
+        </div>
+      </form>
 
-						<label>
-							<p style="font-size: 14.4px; color: #212529;">Quem vai receber?</p>
-							<input class="input_pattern" type="text" name="patner-name" placeholder="Nome dele(a)">
-						</label>
-						<label>
-							<p style="font-size: 14.4px; color: #212529;">Telefone dele(a)</p>
-							<input class="input_pattern" type="text" name="your-phone" placeholder="Ex.: DDD + Telefone">
-						</label>
+      <footer>
+        <nav>
+          <ul>
+            <li><a href="" target="_blank">Dúvidas</a></li>
+            <li><a href="" target="_blank">Contato</a></li>
+            <li><a href="" target="_blank">Termos de uso</a></li>
+          </ul>
+        </nav>
 
-					</div>
-
-				</div>
-
-
-				<div class="sec_container">
-					<h1 style="color:#212529; font-size: 28px; font-weight: 400;">Agendamento</h1>
-
-					<div style="display: flex; flex-direction: column; gap: 15px; margin-top: 20px;">
-
-						<label>
-							<p style="font-size: 14.4px; color: #212529;">Data do Envio</p>
-							<input class="input_pattern" type="date" name="hour-date" placeholder="01/01/2025">
-						</label>
-						<label>
-							<p style="font-size: 14.4px; color: #212529;">Hora do envio</p>
-							<input class="input_pattern" type="time" name="hour-send" placeholder="09:48 AM">
-						</label>
-
-					</div>
-
-				</div>
-
-
-				<div class="sec_container">
-					<h1 style="color:#212529; font-size: 28px; font-weight: 400; text-align: center;">Detalhes do pedido</h1>
-
-					<div style="display: flex; flex-direction: column; gap: 15px; margin-top: 20px;">
-						<ul style="display: flex; flex-direction: column; gap: 10px;">
-							<li style="display: flex; justify-content: space-between;">
-								<p>Telemensagem selecionada</p>
-								<p>R$ 19,90</p>
-							</li>
-							<li style="display: flex; justify-content: space-between;">
-								<p>Envio p/n de Celular</p>
-								<p>R$ 10,00</p>
-							</li>
-							<li style="display: flex; justify-content: space-between;">
-								<p>+ Envio de texto</p>
-								<p>R$ 3,00</p>
-							</li>
-							<li style="display: flex; justify-content: space-between;">
-								<p>+ Envio de audio whatsapp</p>
-								<p>R$ 9,00</p>
-							</li>
-							<li style="display: flex; justify-content: space-between;">
-								<p>+ Gravação Telefônica</p>
-								<p>GRÁTIS</p>
-							</li>
-						</ul>
-						<br>
-						<p>Total de <span>R$ 19,08</span></p>
- 
-						<input style="cursor:pointer; padding: 10px; background: #B51717; border:0; border-radius: 10px; color: white; font-size: 20px;" type="submit" value="CONFIRMAR AGENDAMENTO" />
-					</div>
-
-				</div>
-
-			
-
-			</form>
-
-			<footer>
-				<nav>
-					<ul>
-						<li><a href="" target="_blank">Dúvidas</a></li>
-						<li><a href="" target="_blank">Contato</a></li>
-						<li><a href="" target="_blank">Termos de uso</a></li>
-					</ul>
-				</nav>
-
-				<p>© 2025 Todos os direitos reservados - <span>Tryzo Tecnologia</span></p>
-			</footer>
-
-
-		</main>
-	</body>
+        <p>
+          © 2025 Todos os direitos reservados - <span>Tryzo Tecnologia</span>
+        </p>
+      </footer>
+    </main>
+  </body>
 </html>

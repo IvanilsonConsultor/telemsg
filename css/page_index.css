@@ -2,7 +2,7 @@
 
 /* Seção principal com um gradiente de fundo */
 .sec_beautiful {
-	background: linear-gradient(white, #D5D5D5);
+	background-color: rgba(255, 255, 255, 0.5);
 }
 
 /* Container centralizado com espaçamento e alinhamento ajustado */
@@ -107,6 +107,10 @@
 	display: flex;
 	gap: 10px;
 	max-width: 1140px;
+}
+
+.card {
+	background-color: white;
 }
 
 /* Container para os cartões de categorias */
